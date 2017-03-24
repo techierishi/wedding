@@ -27,6 +27,7 @@
 
 	<!-- Main CSS Stylesheet -->
 	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link rel="stylesheet" type="text/css" href="css/notify.css">
 
 	<!-- Google Web Fonts  -->
 	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins:400,300,500,600,700">
@@ -60,7 +61,7 @@
 	   		float: left;
 	   		height: 500px;
 	   		width: 300px;
-	   		margin-left: 0px;
+			margin-left: 5%;
 	   		-webkit-perspective: 450;
 	   		box-sizing: border-box;
 	   	}
@@ -211,12 +212,10 @@
 						<div class="col-md-5 col-sm-6" id="right_details" style="display:none;">
 							<div class="row">
 								<div class="col-md-6">
-									<img src="images/bride.png" class="img-responsive" alt="">
-
+									<img src="images/groom.png" class="img-responsive" alt="">
 								</div>
 								<div class="col-md-6">
-									<img src="images/groom.png" class="img-responsive" alt="">
-
+									<img src="images/bride.png" class="img-responsive" alt="">
 								</div>
 							</div>
 
@@ -594,6 +593,7 @@
 			<!-- All Javascript Plugins  -->
 			<script type="text/javascript" src="js/jquery.min.js"></script>
 			<script type="text/javascript" src="js/plugin.js"></script>
+			<script type="text/javascript" src="js/notify.js"></script>
 
 			<!-- Main Javascript File  -->
 			<script type="text/javascript" src="js/scripts.js"></script>
@@ -637,6 +637,8 @@
 			<script src="js/countdown.js" charset="utf-8"></script>
 			<script type="text/javascript">
 				$(document).ready(function() {
+					$.notify("Hi! Please tap on door.", {color: "#fff", background: "#20D67B",blur: 0.4,delay:4000});
+
 					$('#countdown').countdown({date: '24 april 2017 22:30'}, function() {
 						$('#countdown').text('Thanks for visiting our wedding.');
 					});

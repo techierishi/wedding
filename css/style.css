@@ -127,7 +127,7 @@ fieldset {
 }
 
 .section-space-padding {
-    padding: 50px 0px;
+    padding: 80px 0px;
 }
 
 .section-title {
@@ -1859,3 +1859,8 @@ background-color: #ff2828 !important;
 color : #FFF !important;
 }
 
+@media all and (max-width: 699px) and (min-width: 420px) {
+  #right_details {
+    margin-top: 100px !important;
+  }
+}
