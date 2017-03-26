@@ -32,6 +32,7 @@
 	<!-- Google Web Fonts  -->
 	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins:400,300,500,600,700">
 	<script type="text/javascript" src="js/angular.min.js"></script>
+	<script type="text/javascript" src="js/me-lazyload.js"></script>
 
 
 	<!-- HTML5 shiv and Respond.js support IE8 or Older for HTML5 elements and media queries -->
@@ -61,7 +62,7 @@
 	   		float: left;
 	   		height: 500px;
 	   		width: 300px;
-			margin-left: 5%;
+	   		margin-left: 5%;
 	   		-webkit-perspective: 450;
 	   		box-sizing: border-box;
 	   	}
@@ -138,7 +139,7 @@
 
 		<!-- Preloader Start -->
 		<div class="preloader">
-			<p>Loading...</p>
+			<p>Page size: 5MB. Please wait...</p>
 		</div>
 		<!-- Preloader End -->
 
@@ -212,10 +213,10 @@
 						<div class="col-md-5 col-sm-6" id="right_details" style="display:none;">
 							<div class="row">
 								<div class="col-md-6">
-									<img src="images/groom.png" class="img-responsive" alt="">
+									<img lazy-src="images/groom.png" class="bride_groom img-responsive" alt="">
 								</div>
 								<div class="col-md-6">
-									<img src="images/bride.png" class="img-responsive" alt="">
+									<img lazy-src="images/bride.png" class="bride_groom img-responsive" alt="">
 								</div>
 							</div>
 
@@ -235,7 +236,7 @@
 									</tr>
 									<tr>
 										<td>Location</td>
-										<td>Asansol</td>
+										<td>Asansol <a href="https://www.google.co.in/maps/place/Railway+Officers+Club/@23.6830894,86.9850776,17.05z/data=!4m12!1m6!3m5!1s0x39f7192a3d187c93:0xf30faa1a749b6c69!2sRailway+Officers+Club!8m2!3d23.6848675!4d86.9867269!3m4!1s0x39f7192a3d187c93:0xf30faa1a749b6c69!8m2!3d23.6848675!4d86.9867269?hl=en" target="_blank" style="color:#337ab7;text-decoration:underline"> Show On Map </a></td>
 									</tr>
 									<tr>
 										<td>Contact</td>
@@ -272,35 +273,35 @@
 							<div class="experience">
 
 								<div class="experience-item">
-									<div class="experience-circle" style="background: url(images/groom_father.jpg);">
+									<div class="experience-circle" data-original="images/groom_father.jpg" style="background: url(images/groom_father.jpg);">
 
 									</div>
 									<div class="experience-content experience-color-blue">
 										<h4>Ashok Kumar</h4>
 										<h6>Groom's Father</h6>
-										<p>I bless bride and groom.</p>
+										<p>Being a member of a family is a great pleasure, but also a big responsibility. But I believe that you’ll cope with your new duties perfectly.</p>
 									</div>
 								</div>
 
 								<div class="experience-item">
-									<div class="experience-circle" style="background: url(images/groom_mother.jpg);">
+									<div class="experience-circle" data-original="images/groom_mother.jpg" style="background: url(images/groom_mother.jpg);">
 
 									</div>
 									<div class="experience-content experience-color-blue">
 										<h4>Anita</h4>
 										<h6>Groom's Mother</h6>        
-										<p>I bless bride and groom.</p>
+										<p>Love is the greatest power: it’s able to take people up to the skies, but it’s also able to break them. And I wish with all my heart that you would have only ups in your life.</p>
 									</div>
 								</div>
 
 								<div class="experience-item">
-									<div class="experience-circle" style="background: url(images/groom_brother.jpg);">
+									<div class="experience-circle" data-original="images/groom_brother.jpg" style="background: url(images/groom_brother.jpg);">
 
 									</div>
 									<div class="experience-content experience-color-blue">
 										<h4>Manikesh</h4>
 										<h6>Groom's Elder Brother</h6>        
-										<p>I bless bride and groom.</p>
+										<p>Create a small amazing world of your own,Where the seeds of love, support and care are sown.Congratulations on your big day!</p>
 									</div>
 								</div>
 
@@ -311,32 +312,32 @@
 							<div class="experience">
 
 								<div class="experience-item">
-									<div class="experience-circle experience-company pink-color-bg" style="background: url(images/bride_father.jpg);">
+									<div class="experience-circle experience-company pink-color-bg" data-original="images/bride_father.jpg" style="background: url(images/bride_father.jpg);">
 									</div>
 									<div class="experience-content">
 										<h4>Anil</h4>
 										<h6>Brides's Father</h6>        
-										<p>I bless bride and groom.</p>
+										<p>People say that real love must go through many tests. And I wish you from all my heart to stand these tests and keep the love till the end. Congratulations on your wedding, my beloved bride and groom!</p>
 									</div>
 								</div>
 
 								<div class="experience-item">
-									<div class="experience-circle experience-company pink-color-bg" style="background: url(images/bride_mother.jpg);">
+									<div class="experience-circle experience-company pink-color-bg" data-original="images/bride_mother.jpg" style="background: url(images/bride_mother.jpg);">
 									</div>
 									<div class="experience-content">
 										<h4>Poonam</h4>
 										<h6>Brides's Mother</h6>        
-										<p>I bless bride and groom.</p>
+										<p>Three simple words “I love you” will never be enough. Never stop showing your love to each other. Never stop loving each other. Congratulations on getting married!</p>
 									</div>
 								</div>
 
 								<div class="experience-item">
-									<div class="experience-circle experience-company pink-color-bg" style="background: url(images/bride_brother.jpg);">
+									<div class="experience-circle experience-company pink-color-bg" data-original="images/bride_brother.jpg" style="background: url(images/bride_brother.jpg);">
 									</div>
 									<div class="experience-content">
 										<h4>Anup</h4>
 										<h6>Brides's Brother</h6>        
-										<p>I bless bride and groom.</p>
+										<p>Today two souls of yours have turned into one,Wishing you joy and lots of fun! Hearty congratulations on your big day!</p>
 									</div>
 								</div>
 
@@ -379,7 +380,7 @@
 								<div ng-repeat="x in ourphotos" class="col-md-4 col-sm-6 col-xs-12 mix {{x.category}}" >
 									<div class="item">
 										<a href="{{x.image}}" class="portfolio-popup" title="{{x.category}}">
-											<img src="{{x.image}}" alt="">
+											<img lazy-src="{{x.image}}" alt="">
 										</a>
 									</div>
 								</div>
@@ -410,7 +411,7 @@
 
 					<div class="row">
 						<div class="col-md-offset-3 col-sm-offset-2 col-md-6 col-sm-8">
-							<div class="testimonial-carousel-list margin-top-20" ng-controller="myPhotoCtrl">
+							<div class="testimonial-carousel-list margin-top-20" ng-controller="myPhotoCtrl2">
 
 								<div class="testimonial-word text-center" ng-repeat="x in records">
 									<img src="{{x.image}}" class="img-responsive" alt="">
@@ -503,7 +504,7 @@
 							<div class="services-detail tilak">
 								<i></i>
 								<h4>Tilak</h4>
-								<h5>21-04-2017</h5>
+								<h5>20-04-2017</h5>
 								<hr>
 							</div>
 						</div>
@@ -571,7 +572,6 @@
 								<li><a href="#" target="_blank" class="twitter"><i class="icon-social-twitter"></i></a></li>
 								<li><a href="#" target="_blank" class="google-plus"><i class="icon-social-google"></i></a></li>
 								<li><a href="#" target="_blank" class="instagram"><i class="icon-social-instagram"></i></a></li>
-								<li><a href="#" target="_blank" class="dribbble"><i class="icon-social-dribbble"></i></a></li>
 							</ul>
 						</div>
 
@@ -598,7 +598,7 @@
 			<!-- Main Javascript File  -->
 			<script type="text/javascript" src="js/scripts.js"></script>
 			<script type="text/javascript" src="js/heartsfalling.js"></script>
-			<script src="http://s.codepen.io/assets/libs/prefixfree.min.js"></script>
+			<script type="text/javascript" src="js/jquery.lazyload.js"></script>
 			<script>
 				var myVideo = document.getElementById("inv_video"); 
 
@@ -628,7 +628,7 @@
 						$(".thumb").removeClass("thumbOpened");
 						y.addClass("thumbOpened");
 						justPlay();
-						$('#right_details').fadeIn(1000);
+						$('#right_details').fadeIn(2500);
 					}
 				}
 			</script>
@@ -642,6 +642,15 @@
 					$('#countdown').countdown({date: '24 april 2017 22:30'}, function() {
 						$('#countdown').text('Thanks for visiting our wedding.');
 					});
+				});
+
+				$("div.experience-circle").lazyload({
+					effect : "fadeIn"
+				});
+				$("img.bride_groom").lazyload({
+					effect : "fadeIn",
+					threshold : 200
+
 				});
 			</script>
 		</body>

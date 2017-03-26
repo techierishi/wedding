@@ -1,5 +1,6 @@
-var app = angular.module("myApp", []);
-app.controller("myPhotoCtrl", function($scope) {
+var app = angular.module("myApp", ['me-lazyload']);
+
+app.controller("myPhotoCtrl2", function($scope,$http) {
 	$scope.records = [{name:"Nikesh",image:"images/friends/nikesh.jpg",message:" Hi Nikesh please attend my wedding"}
 	,{name:"Aabhishek",image:"images/friends/aabhishek.jpg",message:" Hi Aabhishek please attend my wedding"}
 	,{name:"Abhijeet Das",image:"images/friends/abhijeet_das.jpg",message:" Hi Abhijeet Das please attend my wedding"}
@@ -59,9 +60,16 @@ app.controller("myPhotoCtrl", function($scope) {
 	,{name:"Vikash",image:"images/friends/vikash.jpg",message:" Hi Vikash please attend my wedding"}
 	,{name:"Vikash Keshri",image:"images/friends/vikash_keshri.jpg",message:" Hi Vikash Keshri please attend my wedding"}
 	,{name:"Vyom",image:"images/friends/vyom.jpg",message:" Hi Vyom please attend my wedding"}
-
 	];
-
+/*$http.get('js/friends.json').
+	success(function(data, status, headers, config) {
+		$scope.records = data;
+	}).
+	error(function(data, status, headers, config) {
+      // log error
+  });*/
+});
+app.controller("myPhotoCtrl", function($scope,$http) {
 
 	$scope.ourphotos = [{category:"selfie",image:"images/us/us10_selfie.jpg"}
 	,{category:"selfie",image:"images/us/us11_selfie.jpg"}
@@ -82,4 +90,14 @@ app.controller("myPhotoCtrl", function($scope) {
 	,{category:"romantic",image:"images/us/us8_romantic.jpg"}
 	,{category:"selfie",image:"images/us/us9_selfie.jpg"}
 	];
+
+	/*$http.get('js/us.json').
+	success(function(data, status, headers, config) {
+		$scope.ourphotos = data;
+	}).
+	error(function(data, status, headers, config) {
+      // log error
+  });
+  */
+  
 });
