@@ -31,9 +31,9 @@
 
 	<!-- Google Web Fonts  -->
 	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins:400,300,500,600,700">
-	<script type="text/javascript" src="js/angular.min.js"></script>
-	<script type="text/javascript" src="js/me-lazyload.js"></script>
 
+
+	<script type="text/javascript" src="js/angular.min.js"></script>
 
 	<!-- HTML5 shiv and Respond.js support IE8 or Older for HTML5 elements and media queries -->
     <!--[if lt IE 9]>
@@ -138,9 +138,9 @@
 
 
 		<!-- Preloader Start -->
-		<div class="preloader">
+	<!-- 	<div class="preloader">
 			<p>Page size: 5MB. Please wait...</p>
-		</div>
+		</div> -->
 		<!-- Preloader End -->
 
 
@@ -213,10 +213,10 @@
 						<div class="col-md-5 col-sm-6" id="right_details" style="display:none;">
 							<div class="row">
 								<div class="col-md-6">
-									<img lazy-src="images/groom.png" class="bride_groom img-responsive" alt="">
+									<img src="data:image/png;base64,R0lGODlhAQABAAD/ACwAAAAAAQABAAACADs=" data-src="images/groom.png" class="bride_groom img-responsive lazy_img" alt="">
 								</div>
 								<div class="col-md-6">
-									<img lazy-src="images/bride.png" class="bride_groom img-responsive" alt="">
+									<img src="data:image/png;base64,R0lGODlhAQABAAD/ACwAAAAAAQABAAACADs=" data-src="images/bride.png" class="bride_groom img-responsive lazy_img" alt="">
 								</div>
 							</div>
 
@@ -376,14 +376,14 @@
 						<div class="col-md-10">
 							<div class="portfolio-inner margin-top-30">
 
-
 								<div ng-repeat="x in ourphotos" class="col-md-4 col-sm-6 col-xs-12 mix {{x.category}}" >
 									<div class="item">
 										<a href="{{x.image}}" class="portfolio-popup" title="{{x.category}}">
-											<img lazy-src="{{x.image}}" alt="">
+											<img class="img-responsive" ng-src="{{x.image}}" alt="">
 										</a>
 									</div>
 								</div>
+								
 							</div>
 						</div>
 					</div>
@@ -414,11 +414,10 @@
 							<div class="testimonial-carousel-list margin-top-20" ng-controller="myPhotoCtrl2">
 
 								<div class="testimonial-word text-center" ng-repeat="x in records">
-									<img src="{{x.image}}" class="img-responsive" alt="">
+									<img class="img-responsive" ng-src="{{x.image}}" alt="">
 									<h2>{{x.name}}</h2>
 									<p>{{x.message}}</p>
 								</div>
-
 							</div>
 						</div>
 
@@ -599,6 +598,7 @@
 			<script type="text/javascript" src="js/scripts.js"></script>
 			<script type="text/javascript" src="js/heartsfalling.js"></script>
 			<script type="text/javascript" src="js/jquery.lazyload.js"></script>
+			<script type="text/javascript" src="js/my_lazy_img.js"></script>
 			<script>
 				var myVideo = document.getElementById("inv_video"); 
 
@@ -647,11 +647,7 @@
 				$("div.experience-circle").lazyload({
 					effect : "fadeIn"
 				});
-				$("img.bride_groom").lazyload({
-					effect : "fadeIn",
-					threshold : 200
 
-				});
-			</script>
-		</body>
-		</html>
+					</script>
+				</body>
+				</html>

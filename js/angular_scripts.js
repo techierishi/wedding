@@ -1,4 +1,6 @@
-var app = angular.module("myApp", ['me-lazyload']);
+(function (angular) {
+    'use strict';
+var app = angular.module("myApp", []);
 
 app.controller("myPhotoCtrl2", function($scope,$http) {
 	$scope.records = [{name:"Nikesh",image:"images/friends/nikesh.jpg",message:" Hi Nikesh please attend my wedding"}
@@ -101,3 +103,5 @@ app.controller("myPhotoCtrl", function($scope,$http) {
   */
   
 });
+
+})(angular);
