@@ -38,9 +38,9 @@
         
        /* Preloader */
 		
-/*        $(window).load(function () {
-            $('.preloader').delay(800).fadeOut('slow');
-        });*/
+        $(window).load(function () {
+            $('.preloader').delay(200).fadeOut('slow');
+        });
 		
 		
 		
