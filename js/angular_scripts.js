@@ -20,22 +20,22 @@ app.controller("myPhotoCtrl2", function($scope,$http) {
 ,{name:"Bijay",image:"images/friends/bijay.jpg",message:" Hi Bijay please attend our wedding"}
 ,{name:"Chandan",image:"images/friends/chandan.jpg",message:" Hi Chandan please attend our wedding"}
 ,{name:"Debasmita",image:"images/friends/debasmita.jpg",message:" Hi Debasmita please attend our wedding"}
-,{name:"Deepali",image:"images/friends/deepali.jpg",message:" Hi Deepali please attend our wedding"}
 ,{name:"Dinabanshu",image:"images/friends/dinabanshu.jpg",message:" Hi Dinabanshu please attend our wedding"}
 ,{name:"Indrajit",image:"images/friends/indrajit.jpg",message:" Hi Indrajit please attend our wedding"}
 ,{name:"Jay",image:"images/friends/jay.jpg",message:" Hi Jay please attend our wedding"}
 ,{name:"Joydeep",image:"images/friends/joydeep.jpg",message:" Hi Joydeep please attend our wedding"}
 ,{name:"Kaushal",image:"images/friends/kaushal.jpg",message:" Hi Kaushal please attend our wedding"}
 ,{name:"Mayuri",image:"images/friends/mayuri.jpg",message:" Hi Mayuri please attend our wedding"}
+,{name:"Niharika",image:"images/friends/niharika.jpg",message:" Hi Niharika please attend our wedding"}
 ,{name:"Pallavi",image:"images/friends/pallavi.jpg",message:" Hi Pallavi please attend our wedding"}
 ,{name:"Pankaj",image:"images/friends/pankaj.jpg",message:" Hi Pankaj please attend our wedding"}
 ,{name:"Pushpak",image:"images/friends/pushpak.jpg",message:" Hi Pushpak please attend our wedding"}
 ,{name:"Rajeev",image:"images/friends/rajeev.jpg",message:" Hi Rajeev please attend our wedding"}
 ,{name:"Rakesh",image:"images/friends/rakesh.jpg",message:" Hi Rakesh please attend our wedding"}
+,{name:"Ranjit",image:"images/friends/ranjit.jpg",message:" Hi Ranjit please attend our wedding"}
 ,{name:"Richa",image:"images/friends/richa.jpg",message:" Hi Richa please attend our wedding"}
 ,{name:"Riya",image:"images/friends/riya.jpg",message:" Hi Riya please attend our wedding"}
 ,{name:"Robin",image:"images/friends/robin.jpg",message:" Hi Robin please attend our wedding"}
-,{name:"Ronnie Da",image:"images/friends/ronnie_da.jpg",message:" Hi Ronnie Da please attend our wedding"}
 ,{name:"Rupak",image:"images/friends/rupak.jpg",message:" Hi Rupak please attend our wedding"}
 ,{name:"Sandip",image:"images/friends/sandip.jpg",message:" Hi Sandip please attend our wedding"}
 ,{name:"Sanjay",image:"images/friends/sanjay.jpg",message:" Hi Sanjay please attend our wedding"}
@@ -45,11 +45,9 @@ app.controller("myPhotoCtrl2", function($scope,$http) {
 ,{name:"Subhajit",image:"images/friends/subhajit.jpg",message:" Hi Subhajit please attend our wedding"}
 ,{name:"Suvra",image:"images/friends/suvra.jpg",message:" Hi Suvra please attend our wedding"}
 ,{name:"Swagnika",image:"images/friends/swagnika.jpg",message:" Hi Swagnika please attend our wedding"}
-,{name:"Vijaya Laxmi",image:"images/friends/vijaya_laxmi.jpg",message:" Hi Vijaya Laxmi please attend our wedding"}
 ,{name:"Vikash",image:"images/friends/vikash.jpg",message:" Hi Vikash please attend our wedding"}
 ,{name:"Vikash Keshri",image:"images/friends/vikash_keshri.jpg",message:" Hi Vikash Keshri please attend our wedding"}
-,{name:"Vyom",image:"images/friends/vyom.jpg",message:" Hi Vyom please attend our wedding"}
-	];
+,{name:"Vyom",image:"images/friends/vyom.jpg",message:" Hi Vyom please attend our wedding"}];
 /*$http.get('js/friends.json').
 	success(function(data, status, headers, config) {
 		$scope.records = data;
